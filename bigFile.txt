@@ -1,0 +1,82 @@
+taskCheck<- scan("task.txt",what= "Character", sep=NULL)
+taskCheck
+for( j in 1: length(temp)){
+for( i in 1: length(taskCheck)){
+  if(grepl(taskCheck[i], temp[j], fixed=TRUE)){
+    print(i); print(taskCheck[i]); print(grepl(taskCheck[i], temp[j], fixed=TRUE))
+  }
+}
+}
+Assignment – Calculating value creation
+Mathematical formulization for Supplier-Firm-Buyer games
+Let  , ,  be sets of suppliers, firms and buyers respectively. Then   will be the player set. A matching is a 3-tuple ijk consisting of a player i from set  , a player j from set  , and a player k from set  . Element   is interpreted as the value that can be created by the matching  ijk.
+ .
+The term   represents buyer k's willingness-to-pay for transacting with firm j. Similarly, the term   represents supplier i’s opportunity cost for transacting with firm  j.
+
+Constellation 1: Consider a game between two suppliers, two firms, and one buyer. Each supplier can transact with at most one firm, and vice versa. The buyer can transact with at most one firm. Each supplier has an opportunity cost of EUR 10 of providing resources to a firm. The buyer has a willingness to pay of EUR 100 for the first firm's product, and a willingness to pay of EUR 150 for the second firm's product.
+ 
+
+The value created is   and is determined by the largest possible matching, namely the buyer with the second firm and either of the two suppliers.
+
+Player l	 	 	Added value
+ 	Guaranteed minimum
+ 
+Buyer	140	0	140	90 = max{0,140-50=90}
+Firm 1	140	140	0	0 = max{0,140-190=-50}
+Firm 2	140	90	50	0 = max{0,140-140=0}
+Supplier i	140	140	0	0 = max{0,140-190=-50}
+
+There is no game without buyer. That is why  
+As first firm doesn`t create the value (there is no such player in the largest possible matching),   is still equal 140.
+ 
+All suppliers are identical, so game without one supplier has the same value created.
+Guaranteed  minimum derives from the fact that with the added value principle, no player can receive more than its added value. Thus, if every other player receives its added value, and if there is still some value remaining, then player l is guaranteed to receive this “left-over” value, namely  .
+
+Each player’s added value can be interpreted in terms of competition. Since only one supplier is required, and since the suppliers are identical, the added value of each supplier is ˆ0. The second firm has added value of ˆ50, but the first firm has no added value. With the second firm in the game, the first firm provides no additional benefit. The buyer has added value of ˆ140. Without the buyer, no value is created, so the buyer could capture all the value. Although the first firm has no added value, it does provide partial competition for the second firm. Consequently, the second firm can capture, at most, ˆ50, thus guaranteeing that the buyer captures at least ˆ90 of value. In summary, competition between the suppliers and partial competition between the firms guarantee ˆ90 to the buyer. The remaining ˆ50 is divided in a residual bargaining problem between the second firm and the buyer.
+
+Resource price = firm costs =ˆ10.
+Product price = buyer costs:
+is equal ˆ10 for the product of the first firm;
+is from ˆ10 to ˆ60 for the product of the second firm.
+
+Constellation 2: Consider a game between four suppliers, three firms, and two buyers. Each supplier can transact with at most one firm, and vice versa. Similarly, each buyer can transact with at most one firm, and vice versa. Each supplier has an opportunity cost of  EUR 10 of providing resources to a firm. Each buyer has a willingness to pay of  EUR 100 for a firms product.
+
+ 
+
+The value created is  .
+
+Player l	 	 	Added value
+ 	Guaranteed minimum
+ 
+Buyer k	180	90	90	90 = max{0,180-90=90}
+Firm j	180	180	0	0 = max{0,180-180=0}
+Supplier i	180	180	0	0 = max{0,180-180=0}
+
+All firms as well as suppliers are identical. That`s why the created value of the game won`t change without any firm or supplier:  
+The added value of each supplier and each firm is ˆ0. Each buyer has an added value of  ˆ90, and since all the other players have zero added value, each buyer captures its added value. As before, there is a natural interpretation for this. There are an excess number of firms with respect to the buyers, and so each firm has zero added value. Although the firms are in a favorable position with respect to suppliers, this favorable position is not a sufficient condition for capturing value. 
+
+Resource price = firm costs =ˆ10.
+Product price = buyer costs = ˆ10.
+(For each supplier and each firm)
+
+Constellation 3: Consider a game between four suppliers, three firms, and two buyers. Each supplier can transact with at most one firm, and vice versa. Similarly, each buyer can transact with at most one firm, and vice versa. Each supplier has an opportunity cost of  EUR 10 of providing resources to a firm. Each buyer has a willingness to pay of  EUR 100 for the product of the first or second firm, and a willingness to pay of 150 for the product of the third firm.
+ 
+
+The value created is  .
+
+Player l	 	 
+Added value
+ 	Guaranteed minimum
+ 
+Buyer 1	230	140=150-10	90	90 = max{0,230-140=90}
+Buyer 2	230	140=150-10	90	90 = max{0,230-140=90}
+Firm 1,2	230	230	0	0 = max{0,230-230=0}
+Firm 3	230	180=2*(100-10)	50	50 = max{0,230-180=50}
+Supplier i	230	230	0	0 = max{0,230-230=0}
+
+The game in Constellation 3 has much in common with the game in Constellation 2. The number of each type of player remains the same; the added values of the suppliers, the first firm, and the second firm are each ˆ0; the third firm has an added value of  ˆ50, and each buyer has an added value of ˆ90.  But, unlike Constellation  2, one of the firms has positive added value, which it captures.  The source of this firms added value is that it is different from its competitors. That is, it has a favorable  asymmetry between itself and the other firms. In this example, the favorable asymmetry takes the form of buyers having a higher willingness-to-pay for its product. In moving from Constellation 2 to Constellation 3, the third firm established positive added value through a favorable willingness-to-pay asymmetry.
+
+Resource price = firm costs = ˆ10.
+Product price = buyer costs:
+is equal ˆ10 for products of first and second firms;
+is equal ˆ60 for the product of the third firm.

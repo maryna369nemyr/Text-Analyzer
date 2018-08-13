@@ -1,0 +1,4 @@
+"words_with_repetitive_consonants"
+"1" "dffvgn"
+"2" "ttyuijhh"
+"3" "Tt"
